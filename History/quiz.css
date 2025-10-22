@@ -1,0 +1,87 @@
+.question{
+    display:none; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 2rem;              /* space inside box */
+    margin: 2rem auto;          /* center on page */
+    width: auto;   
+    max-height:80vh;              /* grow/shrink with content */
+    max-width: 90%;             /* optional: caps width */
+    min-width: 300px;           /* optional: keeps it from being too small */
+    overflow-y:auto; 
+    
+    animation: fadeIn 1s; 
+
+}
+
+.choices{
+    display: flex; 
+    text-align: left; 
+    flex-direction: column; 
+    align-items: flex-start; 
+
+    width:90%; 
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+.choices label{
+    display: flex; 
+    align-items: center; 
+    cursor: pointer; 
+    margin-bottom: 1rem; 
+    font-size: clamp(1rem, 1.2rem,1.4rem); 
+}
+
+.question p{
+    font-size: clamp(2rem, 2.2rem, 2.5rem); 
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem; 
+    width:90%;
+    max-width: 600px; 
+}
+
+.question label{
+    text-align: left; 
+}
+
+.choices input[type = "radio"]{
+    margin-right: 0.5rem; 
+    margin-top: 1rem; 
+}
+
+.nextButton:hover{
+    background-color: rgb(57, 205, 255); 
+    transform: scale(1.1); 
+}
+
+.nextButton{
+    align-self: center; 
+    margin-bottom:1rem; 
+}
+
+#loading {
+  /*display: none; */ 
+  justify-content: center;
+  align-items: top;
+  margin-top:10vh; 
+  top:0;
+  left:0; 
+}
+
+#loading img{
+    width: 90vw;       
+    height: 80vh;     
+}
+
+
+#showResults{  
+    display:flex; 
+    justify-content:center; 
+    position: absolute; 
+    left:50%;
+    transform: translateX(-50%);
+    top:10vw; 
+    font-size: 3rem; 
+}
